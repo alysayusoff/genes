@@ -1,0 +1,17 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>D.Bucha Genes</h1>
+        <table>
+            <tr>
+                <th>Gene ID</th>
+            </tr>
+            {% for taxonomy in taxonomies %}
+            <tr>
+                <td>{{taxonomy.protein_id}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
